@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kranti — Proof that goods were received</title>
+<meta name="description" content="Kranti turns an offline Sauda into a hash-sealed, OTP-verified Invoice Acknowledgement Receipt. No app for buyers. No app for agents. Just a stamp that holds.">
+<link rel="canonical" href="https://YOUR-DOMAIN-HERE.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brandmark">
+      <span class="word">Kranti</span>
+      <span class="tag">by Saroj</span>
+    </div>
+    <nav class="links">
+      <a class="navlink" href="#how">How it works</a>
+      <a class="navlink" href="#compare">Why Kranti</a>
+      <a class="navlink" href="#pricing">Pricing</a>
+      <a class="navlink" href="#contact">Contact</a>
+    </nav>
+    <button class="btn btn-primary btn-sm" data-open="signup">Get Started</button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Invoice Acknowledgement Receipts</div>
+      <h1>The moment goods change hands, becomes <em>proof</em>.</h1>
+      <p class="lede">Kranti turns an offline Sauda — the call, the WhatsApp, the agent's word — into a hash-sealed, OTP-verified receipt. Your buyer never installs anything. They just confirm, and it's locked.</p>
+      <div class="hero-cta">
+        <button class="btn btn-primary" data-open="signup">Get Started</button>
+        <a class="btn btn-ghost" href="#how">See how it works</a>
+      </div>
+      <div class="hero-note">No buyer app. No buyer login. One link, one OTP, one seal.</div>
+    </div>
+    <div class="stamp-stage">
+      <div class="stamp-paper">
+        <div class="field"><span>Order</span><span>ORD-004821</span></div>
+        <div class="field"><span>Buyer</span><span>GSTIN 27AAB...4Z2</span></div>
+        <div class="field"><span>Invoice</span><span>INV-2026-01187</span></div>
+        <div class="field"><span>Status</span><span>Verified</span></div>
+        <div class="field" style="border-bottom:none;"><span>Sealed</span><span>2026-08-20 11:42</span></div>
+        <svg class="seal-mark" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="64" cy="64" r="58" fill="none" stroke="#A32638" stroke-width="2.5"/>
+          <circle cx="64" cy="64" r="49" fill="none" stroke="#A32638" stroke-width="1"/>
+          <path id="sealcircle" d="M 64 15 A 49 49 0 1 1 63.9 15" fill="none"/>
+          <text font-family="IBM Plex Mono, monospace" font-size="9" fill="#A32638" letter-spacing="1.5">
+            <textPath href="#sealcircle" startOffset="2%">SEALED · KRANTI · SEALED · KRANTI ·</textPath>
+          </text>
+          <text x="64" y="60" text-anchor="middle" font-family="Fraunces, serif" font-weight="700" font-size="15" fill="#A32638">VERIFIED</text>
+          <text x="64" y="76" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="8" fill="#A32638">SHA-256</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROBLEM (ledger) ================= -->
+<section class="ledger">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">The gap</div>
+      <h2>A verbal deal has no defense when it's disputed.</h2>
+    </div>
+    <div class="ledger-list">
+      <div class="ledger-item">
+        <div class="num">01</div>
+        <div>
+          <h3>Billing apps record the transaction, not the receipt</h3>
+          <p>Ledger tools log what was invoiced. None of them confirm the buyer actually received it on the terms stated.</p>
+        </div>
+      </div>
+      <div class="ledger-item">
+        <div class="num">02</div>
+        <div>
+          <h3>Marketplaces solve matching, not proof</h3>
+          <p>They connect buyer to seller. Once the deal moves offline — which most still do — the platform's job ends.</p>
+        </div>
+      </div>
+      <div class="ledger-item">
+        <div class="num">03</div>
+        <div>
+          <h3>E-invoicing proves tax validity, not acceptance</h3>
+          <p>A GST IRN confirms the invoice exists. It says nothing about whether the buyer agreed the goods arrived as promised.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS (register) ================= -->
+<section class="register" id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">The pipeline</div>
+      <h2>Four steps. The buyer only touches two of them.</h2>
+    </div>
+    <div class="register-grid">
+      <div class="reg-cell">
+        <div class="idx">01 / Order</div>
+        <h3>Record the Sauda</h3>
+        <p>Enter the deal as it happened — one order, any number of independent buyers, each with their own terms.</p>
+      </div>
+      <div class="reg-cell">
+        <div class="idx">02 / Sale Order</div>
+        <h3>Buyer verifies</h3>
+        <p>A link goes out by SMS and email. The buyer taps Verify. No account, no download.</p>
+        <span class="freeze">Freeze 01</span>
+      </div>
+      <div class="reg-cell">
+        <div class="idx">03 / Bill</div>
+        <h3>OTP seals it</h3>
+        <p>Buyer triggers their own OTP. On match, the receipt is hash-sealed and timestamped — permanently.</p>
+        <span class="freeze">Freeze 02</span>
+      </div>
+      <div class="reg-cell">
+        <div class="idx">04 / Archive</div>
+        <h3>Distributed & archived</h3>
+        <p>Sent to buyer, agent, and transporter. Filed forever, retrievable by QR code, never deleted.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMPARISON ================= -->
+<section class="compare" id="compare">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Why Kranti</div>
+      <h2>Nobody else digitizes the moment of acceptance.</h2>
+    </div>
+    <div class="table-scroll">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Capability</th>
+            <th>Billing / ledger apps</th>
+            <th>Marketplaces</th>
+            <th>Govt e-invoicing</th>
+            <th class="us">Kranti</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Records the transaction</td>
+            <td class="yes">Yes</td>
+            <td class="dim">Partial</td>
+            <td class="dim">Tax only</td>
+            <td class="yes">Yes</td>
+          </tr>
+          <tr>
+            <td>Confirms buyer received goods</td>
+            <td class="dim">No</td>
+            <td class="dim">No</td>
+            <td class="dim">No</td>
+            <td class="yes">Yes — OTP verified</td>
+          </tr>
+          <tr>
+            <td>Buyer needs an account</td>
+            <td class="dim">Sometimes</td>
+            <td class="yes">Yes</td>
+            <td class="dim">No</td>
+            <td class="yes">Never</td>
+          </tr>
+          <tr>
+            <td>Tamper-evident seal</td>
+            <td class="dim">No</td>
+            <td class="dim">No</td>
+            <td class="dim">No</td>
+            <td class="yes">Hash-sealed</td>
+          </tr>
+          <tr>
+            <td>Multi-buyer, single deal</td>
+            <td class="dim">Manual</td>
+            <td class="dim">No</td>
+            <td class="dim">No</td>
+            <td class="yes">Native</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRUST STRIP ================= -->
+<section class="trust">
+  <div class="wrap trust-grid">
+    <div class="trust-item"><div class="big">25 min</div><div class="lbl">Hard link expiry, enforced server-side</div></div>
+    <div class="trust-item"><div class="big">3</div><div class="lbl">OTP attempts before seller-only unlock</div></div>
+    <div class="trust-item"><div class="big">SHA-256</div><div class="lbl">Every sealed receipt, hash-verified</div></div>
+    <div class="trust-item"><div class="big">0 days</div><div class="lbl">Retention limit — records are never deleted</div></div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Pricing</div>
+      <h2>One rate. Valid 365 days. No hidden tiers.</h2>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card featured">
+        <div class="price-card-label">Seller</div>
+        <h3>Organization account</h3>
+        <div class="price-card-desc">Full pipeline access — Order, Sale Order, Bill, OTP, archive, unlimited staff seats.</div>
+        <div class="price-amt">₹24,999</div>
+        <div class="price-period">per year</div>
+        <ul class="price-feats">
+          <li>Unlimited buyer, agent, transporter records</li>
+          <li>Multi-buyer orders, no per-leg limit</li>
+          <li>Full audit trail on every deal</li>
+          <li>Email + SMS distribution included</li>
+        </ul>
+        <button class="btn btn-primary form-submit" data-open="signup">Get Started</button>
+      </div>
+      <div class="price-card">
+        <div class="price-card-label">Transporter</div>
+        <h3>Logistics access</h3>
+        <div class="price-card-desc">Visibility into attached orders and delivery-linked receipts.</div>
+        <div class="price-amt">₹7,999</div>
+        <div class="price-period">per year</div>
+        <ul class="price-feats">
+          <li>Attach to Sale Orders you're assigned</li>
+          <li>Receive sealed receipts on delivery</li>
+          <li>Delivery status on your own dashboard</li>
+        </ul>
+        <button class="btn btn-ghost form-submit" data-open="signup">Get Started</button>
+      </div>
+      <div class="price-card">
+        <div class="price-card-label">Agent</div>
+        <h3>Deal origination</h3>
+        <div class="price-card-desc">Track deals you've originated through to sealed receipt.</div>
+        <div class="price-amt">₹3,999</div>
+        <div class="price-period">per year</div>
+        <ul class="price-feats">
+          <li>Visibility on originated orders</li>
+          <li>Notified at each freeze point</li>
+          <li>Receipt copies on distribution</li>
+        </ul>
+        <button class="btn btn-ghost form-submit" data-open="signup">Get Started</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA BAND ================= -->
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Stop taking your buyer's word for it.</h2>
+    <p>Set up your organization and send your first Sale Order today.</p>
+    <button class="btn btn-primary" data-open="signup">Get Started</button>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="word">Kranti</span>
+        <div class="footer-lineage">
+          <div class="l1">Marketed by</div>
+          <div class="l2">Saroj</div>
+          <div class="l3">Product engineered &amp; maintained by The DarkMatter Labs</div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="#how">How it works</a>
+        <a href="#compare">Why Kranti</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>hello@kranti.example</p>
+        <p>+91 98765 43210</p>
+        <p>Pune, Maharashtra, India</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Saroj. Kranti is a product built by The DarkMatter Labs.</span>
+      <span class="legal-links">
+        <a data-open="privacy">Privacy</a>
+        <a data-open="terms">Terms</a>
+        <a data-open="refund">Refund Policy</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= MODAL: SIGNUP ================= -->
+<div class="modal-overlay" id="modal-signup">
+  <div class="modal-box">
+    <div class="modal-head">
+      <div>
+        <h3>Get started with Kranti</h3>
+        <p>Set up your organization account. We'll reach out within one business day.</p>
+      </div>
+      <span class="modal-close" data-close>&times;</span>
+    </div>
+    <div class="modal-body">
+      <!-- Replace YOUR_FORM_ID with your own Formspree form id (formspree.io, free tier) -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-row">
+          <label for="f-name">Full name</label>
+          <input id="f-name" name="name" type="text" required>
+        </div>
+        <div class="form-grid-2">
+          <div class="form-row">
+            <label for="f-company">Company name</label>
+            <input id="f-company" name="company" type="text" required>
+          </div>
+          <div class="form-row">
+            <label for="f-gstin">GSTIN</label>
+            <input id="f-gstin" name="gstin" type="text" pattern="[0-9A-Za-z]{15}" maxlength="15" required>
+          </div>
+        </div>
+        <div class="form-grid-2">
+          <div class="form-row">
+            <label for="f-phone">Phone</label>
+            <input id="f-phone" name="phone" type="tel" required>
+          </div>
+          <div class="form-row">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" required>
+          </div>
+        </div>
+        <button class="btn btn-primary form-submit" type="submit">Submit</button>
+        <div class="form-note">By submitting, you agree to be contacted about setting up your account. See our Privacy Policy.</div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ================= MODAL: PRIVACY ================= -->
+<div class="modal-overlay" id="modal-privacy">
+  <div class="modal-box wide">
+    <div class="modal-head">
+      <div><h3>Privacy Policy</h3><p>Last updated August 2026</p></div>
+      <span class="modal-close" data-close>&times;</span>
+    </div>
+    <div class="modal-body">
+      <h4>What we collect</h4>
+      <p>Account details you provide at signup (name, company, GSTIN, phone, email), and deal data you enter or that your buyers confirm through Kranti — order, invoice, and acknowledgement records.</p>
+      <h4>Buyer, agent &amp; transporter data</h4>
+      <p>These contacts are entered by the seller organization, not by us. They interact with Kranti only through a link and OTP — no account is created on their behalf.</p>
+      <h4>How it's used</h4>
+      <p>Solely to operate the acknowledgement pipeline: generating links, sending OTPs, sealing and archiving receipts, and account support. We do not sell data to third parties.</p>
+      <h4>Retention</h4>
+      <p>Sealed receipts are retained permanently as legal-evidence records, per the product's own design. Account data is retained while your subscription is active.</p>
+      <h4>Contact</h4>
+      <p>privacy@kranti.example</p>
+    </div>
+  </div>
+</div>
+
+<!-- ================= MODAL: TERMS ================= -->
+<div class="modal-overlay" id="modal-terms">
+  <div class="modal-box wide">
+    <div class="modal-head">
+      <div><h3>Terms of Service</h3><p>Last updated August 2026</p></div>
+      <span class="modal-close" data-close>&times;</span>
+    </div>
+    <div class="modal-body">
+      <h4>The service</h4>
+      <p>Kranti provides a platform for sellers to record deals and obtain OTP-verified, hash-sealed acknowledgement receipts from buyers. Kranti is a record-keeping and verification tool, not a party to any underlying commercial transaction.</p>
+      <h4>Your account</h4>
+      <p>You're responsible for the accuracy of data entered into your organization account and for keeping your login credentials secure.</p>
+      <h4>Subscription</h4>
+      <p>Plans are billed annually at the rate shown at signup, valid for 365 days from purchase. Renewal terms will be confirmed before any charge.</p>
+      <h4>Limitation of liability</h4>
+      <p>Kranti seals and timestamps the data submitted by the parties involved. We are not responsible for the accuracy of goods, quantities, or terms entered by a seller or confirmed by a buyer.</p>
+      <h4>Contact</h4>
+      <p>legal@kranti.example</p>
+    </div>
+  </div>
+</div>
+
+<!-- ================= MODAL: REFUND ================= -->
+<div class="modal-overlay" id="modal-refund">
+  <div class="modal-box wide">
+    <div class="modal-head">
+      <div><h3>Refund &amp; Cancellation Policy</h3><p>Last updated August 2026</p></div>
+      <span class="modal-close" data-close>&times;</span>
+    </div>
+    <div class="modal-body">
+      <h4>Cancellation</h4>
+      <p>You may cancel your subscription at any time. Cancellation stops the next renewal — it does not affect the current 365-day term already paid for.</p>
+      <h4>Refunds</h4>
+      <p>Full refund if requested within 7 days of purchase and before meaningful usage (more than 5 sealed receipts generated). Beyond that, refunds are considered case-by-case — write to us.</p>
+      <h4>Archived records</h4>
+      <p>Sealed receipts remain permanently accessible regardless of subscription status, in line with their role as legal-evidence records.</p>
+      <h4>Contact</h4>
+      <p>billing@kranti.example</p>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js" defer></script>
+
+</body>
+</html>
