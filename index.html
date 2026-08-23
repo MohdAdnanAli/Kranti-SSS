@@ -21,7 +21,7 @@
       <span class="tag">by Saroj</span>
     </div>
     <nav class="links">
-      <!-- <a class="navlink" href="#how">How it works</a> -->
+      <a class="navlink" href="#how">How it works</a>
       <a class="navlink" href="#compare">Why Kranti</a>
       <a class="navlink" href="#pricing">Pricing</a>
       <a class="navlink" href="#contact">Contact</a>
@@ -39,7 +39,7 @@
       <p class="lede">Every Sauda you close over call, WhatsApp, or through an agent — Kranti locks it into a receipt your buyer confirms with a single-use verification code. If they say "maal mila," it's on record. No app, no login, nothing for them to download.</p>
       <div class="hero-cta">
         <button class="btn btn-primary" data-open="signup">Get Started</button>
-        <!-- <a class="btn btn-ghost" href="#how">See how it works</a> -->
+        <a class="btn btn-ghost" href="#how">See how it works</a>
       </div>
       <div class="hero-note">Sirf ek link, ek single-use verification code — aur deal seal ho jaati hai.</div>
     </div>
@@ -158,6 +158,117 @@
   </div>
 </section>
 
+<!-- ================= PROCESS (timeline) ================= -->
+<section class="process reveal" id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">How a deal actually moves</div>
+      <h2>Four things happen. You only do two of them.</h2>
+      <p class="sub">Nothing changes about how you close the deal — the call, the WhatsApp, the agent, all of that stays exactly the same. This is what happens after.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="timeline">
+      <div class="tl-step reveal">
+        <div class="tl-marker">1</div>
+        <div class="tl-card">
+          <span class="tl-who">You do this</span>
+          <h3>Type in the Sauda</h3>
+          <p>Enter the deal the way it actually happened — one order, as many buyers as it really has, each with their own rate and terms.</p>
+        </div>
+      </div>
+      <div class="tl-step reveal">
+        <div class="tl-marker">2</div>
+        <div class="tl-card">
+          <span class="tl-who">Your buyer does this</span>
+          <h3>They get a link, they tap Verify</h3>
+          <p>SMS and email, same moment. No app, no account. They read the terms and confirm — or don't.</p>
+        </div>
+      </div>
+      <div class="tl-step reveal">
+        <div class="tl-marker">3</div>
+        <div class="tl-card">
+          <span class="tl-who">Your buyer does this</span>
+          <h3>One code seals it</h3>
+          <p>They enter the code sent to their own phone. The moment it matches, the receipt is locked — hash-sealed, timestamped, done.</p>
+        </div>
+      </div>
+      <div class="tl-step reveal">
+        <div class="tl-marker">4</div>
+        <div class="tl-card">
+          <span class="tl-who">Kranti does this</span>
+          <h3>Everyone gets a copy, forever</h3>
+          <p>Buyer, agent, transporter — each one gets the sealed receipt. Pull it up anytime with a QR scan. Nothing ever gets deleted.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRODUCT IN ACTION (phone mockups) ================= -->
+<section class="inaction reveal" id="product">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">What your buyer actually sees</div>
+      <h2>Three screens. That's the entire experience for them.</h2>
+      <p class="sub">No install, no signup screen, no forgotten password. This is genuinely all of it.</p>
+    </div>
+  </div>
+  <div class="phone-row wrap">
+    <div class="phone-frame">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <div class="sms-thread">
+          <div class="sms-sender">KRANTI</div>
+          <div class="sms-bubble">Sauda ORD-004821 is ready for your confirmation. Verify here: kranti.link/x7d9k2 — valid 25 min.</div>
+        </div>
+      </div>
+      <div class="phone-caption"><span class="pc-num">1</span> Link lands on SMS and email, together</div>
+    </div>
+    <div class="phone-frame">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <div class="webview">
+          <div class="wv-head">Sale Order · ORD-004821</div>
+          <div class="wv-row"><span>Buyer</span><span>Ramesh Traders</span></div>
+          <div class="wv-row"><span>Item</span><span>40 bags · Basmati</span></div>
+          <div class="wv-row"><span>Rate</span><span>₹3,200 / qtl</span></div>
+          <div class="wv-timer">Expires in 24:12</div>
+          <button class="wv-btn">Verify</button>
+        </div>
+      </div>
+      <div class="phone-caption"><span class="pc-num">2</span> Buyer checks the terms, taps Verify</div>
+    </div>
+    <div class="phone-frame">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <div class="webview code-entry">
+          <div class="wv-head">Enter your code</div>
+          <p>Sent to +91 98••• ••210</p>
+          <div class="code-boxes">
+            <span>4</span><span>1</span><span>9</span><span>2</span><span>0</span><span>6</span>
+          </div>
+          <div class="wv-sealed">Sealed the moment it matches</div>
+        </div>
+      </div>
+      <div class="phone-caption"><span class="pc-num">3</span> One code, and the receipt is locked</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TECH USED (humanized) ================= -->
+<section class="stack reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">What it actually runs on</div>
+      <h2>We didn't reinvent SMS, payments, or cloud storage.</h2>
+    </div>
+    <p class="stack-sentence">
+      Your link reaches the buyer's phone through <span class="pill">MSG91</span>, registered the way Indian transactional SMS is legally required to be. Receipts and every archived record live on <span class="pill">AWS</span> — the same infrastructure banks run their systems on. Your subscription is billed through <span class="pill">Razorpay</span>. The record itself sits in <span class="pill">PostgreSQL</span>, chosen because a legal-evidence record needs boring and reliable, not clever. Everything else — <span class="pill">Redis</span>, <span class="pill">NestJS</span>, <span class="pill">Next.js</span>, <span class="pill">Docker</span> — is the plumbing that keeps it fast, and something you should never have to think about.
+    </p>
+  </div>
+</section>
+
 <!-- ================= PRICING ================= -->
 <section class="pricing" id="pricing">
   <div class="wrap">
@@ -233,7 +344,7 @@
       </div>
       <div class="footer-col">
         <h4>Product</h4>
-        <!-- <a href="#how">How it works</a> -->
+        <a href="#how">How it works</a>
         <a href="#compare">Why Kranti</a>
         <a href="#pricing">Pricing</a>
       </div>
@@ -330,7 +441,7 @@
     </div>
     <div class="modal-body">
       <h4>The service</h4>
-      <p>"This page does not define the real product in any aspect" it is just a subscription page." Kranti provides a platform for sellers to record deals and obtain acknowledgement receipts confirmed through a single-use verification code, then hash-sealed for evidence. Kranti is a record-keeping and verification tool, not a party to any underlying commercial transaction.</p>
+      <p>Kranti provides a platform for sellers to record deals and obtain acknowledgement receipts confirmed through a single-use verification code, then hash-sealed for evidence. Kranti is a record-keeping and verification tool, not a party to any underlying commercial transaction.</p>
       <h4>Your account</h4>
       <p>You're responsible for the accuracy of data entered into your organization account and for keeping your login credentials secure.</p>
       <h4>Subscription</h4>
@@ -366,4 +477,4 @@
 <script src="js/main.js" defer></script>
 
 </body>
-</html>c
+</html>
