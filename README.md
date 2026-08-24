@@ -2,9 +2,6 @@
 
 > A modern marketing website for **Kranti**, a product by Dark Matter Labs.
 
-**Live Website:**
-[mohdadnanali.github.io/Kranti-SSS](https://mohdadnanali.github.io/Kranti-SSS/)
-
 **Repository:**
 [GitHub Repository](https://github.com/MohdAdnanAli/Kranti-SSS)
 
@@ -12,26 +9,22 @@
 
 ## Overview
 
-This repository contains the **marketing and landing website for Kranti**.
+This repository contains the marketing and landing website for **Kranti** — a focused public site that explains how Kranti reduces payment risk by creating legally defensible, tamper‑evident acknowledgement receipts.
 
-The website is designed to introduce the Kranti product, communicate its core idea, and provide a polished visual experience for visitors.
-
-It is **not the Kranti product itself**. The repository contains the frontend website used to present and market the product.
+This is a marketing and onboarding surface only; it does not include the product backend, operational details, or vendor-specific configurations.
 
 ---
 
 ## What This Website Does
 
-The site focuses on:
+The site focuses on outcomes that matter to sellers:
 
-* Introducing Kranti and its purpose
-* Communicating the product's value proposition
-* Presenting the core workflow and concepts visually
-* Building a distinctive product identity
-* Providing a responsive experience across screen sizes
-* Creating a polished, product-focused first impression
+* Explain how sealed acknowledgements reduce disputes and speed reconciliation
+* Demonstrate the buyer experience and seller workflow in concise steps
+* Show business outcomes: faster collections, clearer audits, and legally-ready records
+* Provide a clear onboarding path and pricing for seller organizations
 
-The goal is less about exposing technical functionality and more about **telling the product story clearly through design and interaction**.
+The goal is to communicate the product's value clearly while keeping technical and operational details private.
 
 ---
 
@@ -62,7 +55,6 @@ The website is intentionally lightweight.
 * **JavaScript** — interactive behaviour
 * **SVG** — scalable visual elements
 * **Google Fonts** — typography
-* **GitHub Pages** — hosting
 
 There is currently no framework, bundler, or package manager required to run the site.
 
@@ -110,13 +102,7 @@ http://localhost:8000
 
 ## Deployment
 
-The website is deployed using **GitHub Pages**.
-
-### Live
-
-[https://mohdadnanali.github.io/Kranti-SSS/](https://mohdadnanali.github.io/Kranti-SSS)
-
-Changes pushed to the configured GitHub Pages source can be published directly without a separate deployment platform or build pipeline.
+This repository contains only the static marketing website for Kranti. Specific hosting, deployment or backend/runtime details for the Kranti product are intentionally omitted from this public repository for security and IP protection.
 
 ---
 
@@ -124,9 +110,7 @@ Changes pushed to the configured GitHub Pages source can be published directly w
 
 This repository is intentionally focused on the **Kranti marketing website**.
 
-It does not represent the complete Kranti application or its backend infrastructure.
-
-The product itself may contain functionality and infrastructure that is not part of this repository.
+It does not represent the complete Kranti application or its backend infrastructure. Implementation details, internal architecture, hosting, and runtime environments for the full product have been omitted from this repository.
 
 ---
 
